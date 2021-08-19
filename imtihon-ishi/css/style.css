@@ -1,0 +1,587 @@
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url('/fonts/LexendDeca-Regular.woff2') format('woff2'),
+      url('/fonts/LexendDeca-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('/fonts/SpaceMono-Italic.woff2') format('woff2'),
+      url('/fonts/SpaceMono-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('/fonts/SpaceMono-Bold.woff2') format('woff2'),
+      url('/fonts/SpaceMono-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('/fonts/SpaceMono-Regular.woff2') format('woff2'),
+      url('/fonts/SpaceMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('/fonts/SpaceMono-BoldItalic.woff2') format('woff2'),
+      url('/fonts/SpaceMono-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+.container
+{
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", "Space Mono",sans-serif;
+}
+
+header
+{
+  width: 100%;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  padding: 22px 0;
+  box-shadow: 0 1px 5px grey;
+}
+
+.wrapper
+{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.responsive-button
+{
+  display: none;
+}
+
+.responsive-button span
+{
+  display: block;
+  width: 20px;
+  height: 4px;
+  background-color:#FCB72B;
+  margin-top: 2px;
+  margin-right: 2px;
+}
+
+.wrapper__left
+{
+  display: flex;
+  align-items: center;
+}
+
+.wrapper__left .logo img
+{
+  display: block;
+  width: 108px;
+  height: 28px;
+}
+
+.wrapper__left .menu ul
+{
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 58px;
+}
+
+.wrapper__left .menu ul li
+{
+  margin-right: 32px;
+}
+
+.wrapper__left .menu ul li a
+{
+  text-decoration: none;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.wrapper__left .menu ul li a:hover
+{
+  color: #FCB72B;
+  border-bottom: 1px solid #FCB72B;
+}
+
+.site-button
+{
+  background-color: #FCB72B;
+  border: none;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 39px;
+  border: 3px solid #FCB72B;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.site-button:hover
+{
+  background-color: #fff;
+  color: #FCB72B;
+}
+
+@media (max-width:665px)
+{
+  .responsive-button
+  {
+    display: block;
+  }
+
+  .wrapper__left .menu, .site-button
+  {
+    display: none;
+  }
+
+  .logo
+  {
+    margin-left: -10%;
+  }
+}
+/* ================ */
+/* headerni tugashi */
+/* ================ */
+
+main .section-1
+{
+  background-image: url(../images/backgraund1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0 150px 0;
+  z-index: 2;
+}
+
+.section-1 h1
+{
+  width: 500px;
+  margin: 0;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+
+.box
+{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.section-1 p
+{
+  width: 400px;
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-left:100px;
+}
+
+.site-button2
+{
+  background-color: #FCB72B;
+  border: none;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 39px;
+  border: 3px solid #FCB72B;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.site-button2:hover
+{
+  background-color: #fff;
+  color: #FCB72B;
+}
+
+
+.line-1
+{
+  position: absolute;
+  left: -120px;
+}
+
+.line-2
+{
+  margin-top: 135px;
+  margin-left: 15px;
+}
+
+.box-2
+{
+  position: relative;
+  display: none;
+  margin-top: 20px;
+}
+
+.line_2
+{
+  margin: 0;
+  position: absolute;
+  left: -120px;
+}
+@media (max-width:850px)
+{
+  main .section-1
+  {
+    padding: 80px 0 150px 0;
+  }
+
+  .line-1,.line-2
+  {
+    display: none;
+  }
+  
+  .box-2
+  {
+    display: block;
+  }
+
+  .section-1
+  {
+    text-align: center;
+  }
+
+  .section-1 h1, .box p
+  {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+
+  .site-button2
+  {
+    margin-left: 0;
+  }
+}
+
+@media (max-width:620px)
+{
+  .section-1 h1
+  {
+    width: auto;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .section-1 p
+  {
+    width: auto;
+  }
+}
+
+@media (max-width:390px)
+{
+    .line_2
+  {
+    top: -20px;
+    left: -300px;
+  }
+}
+/* ======================== */
+  /* Section-1 ni tugashi */
+/* ======================== */
+.box-3
+{
+  position: relative;
+}
+
+.box-3 ul
+{
+  padding-left: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 140px;
+}
+
+.box-3 ul::before
+{
+  content: "";
+  width: 910px;
+  height: 20px;
+  background-color: #E5ECF4;
+  position: absolute;
+  left: -120px;
+  top: 40px;
+}
+
+.box-3 ul li
+{
+  position: relative;
+  z-index: 1;
+  width: 320px;
+}
+
+.box-3 ul li h4
+{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.box-3 ul li p
+{
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+@media (max-width:1045px)
+{
+
+  .box-3 ul::before
+  {
+    width: 870px;
+  }
+}
+
+@media (max-width:1004px)
+{
+  .box-3 ul::before
+  {
+    width: 830px;
+  }
+
+  .box-3 ul li
+  {
+    width: 300px;
+  }
+}
+
+@media (max-width:945px)
+{
+  .box-3 ul
+  {
+    display: block;
+    margin-top: 70px;
+  }
+
+  .box-3 ul li
+  {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+
+  .box-3 ul li p, h4
+  {
+    margin: 0;
+    margin-left: 80px;
+    margin-bottom: 10px;
+  }
+
+  .box-3 ul::before
+  {
+    transform: rotate(90deg);
+    left: calc(50% - 575px);
+    top: calc(50% - 150px);
+    width: 650px;
+  }
+}
+
+@media (max-width:629px)
+{
+  .box-3 ul li
+  {
+    max-width: 500px;
+  }
+
+  .box-3 ul li p, h4
+  {
+    /* margin-left: 20px; */
+  }
+
+  .box-3 ul::before
+  {
+    transform: rotate(90deg);
+    left: calc(50% - 525px);
+    top: calc(50% - 150px);
+    width: 650px;
+  }
+}
+
+@media (max-width:529px)
+{
+  .box-3 ul::before
+  {
+    display: none;
+  }
+
+  .box-3 ul li
+  {
+    display: block;
+    text-align: center;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box-3 ul li p, h4
+  {
+    margin-left: 0;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width:385px)
+{
+  .box-3 ul li
+  {
+    width: 270px;
+  }
+
+  .box-3 ul li p, h4
+  {
+    width: 270px;
+  }
+}
+/* section-2 ni tugashi */
+.section-3
+{
+  position: relative;
+}
+
+.list
+{
+  padding: 0;
+  list-style-type: none;
+  margin-top: 80px;
+}
+
+.list li
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list li .left h2
+{
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+  margin: 0;
+}
+
+.list li .left p
+{
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.list-link
+{
+  background-color: #FCB72B;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 14px 44px;
+  text-decoration: none;
+  border: 2px solid #FCB72B;
+}
+
+.list-link:hover
+{
+  background-color: #fff;
+  color: #FCB72B;
+}
+
+@media (max-width:1008px)
+{
+  
+}
